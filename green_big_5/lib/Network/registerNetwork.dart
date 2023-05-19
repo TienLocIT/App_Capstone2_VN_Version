@@ -6,7 +6,7 @@ class registerNetwork {
   Future postRegister(String phoneNumber, String fullName,String displayName, int location, int gender, int age,
       String password) async {
     var Key = Validation.Key;
-    var url = Uri.parse("http://192.168.1.11:5000/users/register");
+    var url = Uri.parse("http://192.168.50.198:5000/users/register");
     var response = await http.post(
       url,
       headers: <String, String>{

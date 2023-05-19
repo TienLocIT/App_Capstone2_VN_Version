@@ -5,7 +5,7 @@ import 'package:green_big_5/utill/Verification.dart';
 import "package:http/http.dart" as http;
 class changeDisplayNameNetwork {
   Future changeDisplayNameMethod(String displayName, String phoneNumber) async {
-    var url =Uri.parse("http://192.168.1.11:5000/users/changeDisplayName");
+    var url =Uri.parse("http://192.168.50.198:5000/users/changeDisplayName");
     var key = Validation.KeyChangeDisplayName;
     var response=await http.post(url, body:{
       "phoneNumber": phoneNumber,

@@ -10,6 +10,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   final _phoneNumber=UserSecureStorage.getUserValue();
   _phoneNumber.then((value){
+    print(value);
     if(value!=null){
       runApp(MaterialApp(
         home: loadingMain(),

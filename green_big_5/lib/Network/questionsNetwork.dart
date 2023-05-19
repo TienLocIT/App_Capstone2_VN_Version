@@ -5,7 +5,7 @@ import 'package:green_big_5/utill/Verification.dart';
 class questionsNetwork{
   Future postQuestionsAndGetUsers(String phoneNumber) async {
      var key=Validation.KeyPostUser;
-    var url = Uri.parse("http://192.168.1.11:5000/users/postQuestions");
+    var url = Uri.parse("http://192.168.50.198:5000/users/postQuestions");
      var response = await http.post(
        url,
        headers: <String, String>{

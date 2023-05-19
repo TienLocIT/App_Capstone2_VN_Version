@@ -54,10 +54,10 @@ class _changeDisplayNameState extends State<changeDisplayName> {
     _phoneNumber.then((value){
       setState(() {
         user=userNetwork().getUser(value);
-        Timer.periodic(new Duration(seconds: 10), (timer) {
-          //debugPrint(timer.tick.toString());
-          postAddress(value);
-        });
+        // Timer.periodic(new Duration(seconds: 10), (timer) {
+        //   //debugPrint(timer.tick.toString());
+        //   postAddress(value);
+        // });
       });
     });
     _connectivitySubscription =

@@ -74,10 +74,10 @@ class _HomeState extends State<Question> {
   _getUser(){
     _phoneNumber.then((valuePhone) {
       setState(() {
-        Timer.periodic(new Duration(seconds: 10), (timer) {
-          //debugPrint(timer.tick.toString());
-          postAddress(valuePhone);
-        });
+        // Timer.periodic(new Duration(seconds: 10), (timer) {
+        //   //debugPrint(timer.tick.toString());
+        //   postAddress(valuePhone);
+        // });
         userInformation=userNetwork().getUser(valuePhone);
         userInformation.then((value){
           // final length=value.user.questions.length-1;

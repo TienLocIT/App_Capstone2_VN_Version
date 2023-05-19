@@ -44,6 +44,7 @@ class _loadingMainState extends State<loadingMain> {
     _phoneNumber.then((value){
       user=userNetwork().getUser(value);
       user.then((value){
+        print(value);
             Navigator.push(context,MaterialPageRoute(builder: (context)=>Question()));
       });
     });

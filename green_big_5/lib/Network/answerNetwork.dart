@@ -5,7 +5,7 @@ import "package:http/http.dart" as http;
 import 'package:green_big_5/utill/Verification.dart';
 class answerNetwork{
   Future postAnswer(String phoneNumber,String id,String question,String answer,String index,String dem) async{
-    final url=Uri.parse("http://192.168.1.11:5000/users/postAnswer");
+    final url=Uri.parse("http://192.168.50.198:5000/users/postAnswer");
     final key=Validation.KeyPostUser;
     var response = await http.post(
       url,

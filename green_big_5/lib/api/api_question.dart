@@ -1,7 +1,7 @@
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
  question()async{
-  final url=Uri.parse("https://192.168.1.11:5000/admin/questions");
+  final url=Uri.parse("https://greenbigfive-2.herokuapp.com/admin/questions");
 
   http.Response response=await http.get(url);
   var body=response.body;

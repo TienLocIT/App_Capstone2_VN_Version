@@ -57,10 +57,10 @@ class _userProfileState extends State<userProfile> {
     _phoneNumber.then((value) {
       setState(() {
         userInformation = userNetwork().getUser(value);
-        Timer.periodic(new Duration(seconds: 30), (timer) {
-          //debugPrint(timer.tick.toString());
-          postAddress(value);
-        });
+        // Timer.periodic(new Duration(seconds: 30), (timer) {
+        //   //debugPrint(timer.tick.toString());
+        //   postAddress(value);
+        // });
       });
     });
   }
@@ -406,10 +406,10 @@ class _userProfileState extends State<userProfile> {
     _phoneNumber.then((value){
       setState(() {
        userInformation=userNetwork().getUser(value);
-       Timer.periodic(new Duration(seconds: 30), (timer) {
-         //debugPrint(timer.tick.toString());
-         postAddress(value);
-       });
+       // Timer.periodic(new Duration(seconds: 30), (timer) {
+       //   //debugPrint(timer.tick.toString());
+       //   postAddress(value);
+       // });
       });
     });
   }
